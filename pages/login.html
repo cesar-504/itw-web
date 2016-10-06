@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+	<script type="text/javascript" src="/js/login.js"></script>
+</head>
+<body>
+<hgroup>
+  <h1>ITWACHO</h1>
+  <h3>Ingreso</h3>
+</hgroup>
+<form name="loginForm" ng-submit="login()">
+	{{error}}
+  <div class="group">
+    <input type="email" ng-model="user.email"><span class="highlight"></span><span class="bar"></span>
+    <label>Correo</label>
+  </div>
+	<div class="group">
+    <input type="password" ng-model="user.password"><span class="highlight"></span><span class="bar"></span>
+    <label>Contraseña</label>
+  </div>
+  <button type="submit"  class="button buttonBlue">Ingresar
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+  </button>
+</form>
+
+</body>
+</html>

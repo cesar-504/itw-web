@@ -1,0 +1,14 @@
+
+<div>
+  <button ng-click="update()">actualizar</button>
+  <div ng-repeat="p in model">
+      <div>
+        <h3>{{p.attributes.title}}</h3>
+        <p>
+
+        {{p.attributes.content}}
+        </p>
+      </div>
+  </div>
+ <button ng-click="more()">cargar mas</button>
+</div>
